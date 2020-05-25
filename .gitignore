@@ -4,8 +4,9 @@ pre_grea.bib
 *.aux
 *.bbl
 *.blg
+*.lof
 *.log
+*.lot
 *.out
 *.synctex.gz
 *.toc
-!missfont.log
