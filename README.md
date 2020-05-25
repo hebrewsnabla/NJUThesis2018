@@ -1,6 +1,15 @@
-﻿# NJU Thesis 2018
+﻿# NJU Thesis 2020
 
-南京大学本科生毕业论文LaTex模板 2018 新版
+南京大学本科生毕业论文LaTeX模板 2020 版
+
+由[2018版](https://github.com/AnyiRao/NJUThesis2018)修改而来。
+
+修改：
+* 封面不能显示两行标题的bug
+* 英文摘要的SPECIALIZATION不显示major的错误
+
+---
+原README：
 
 ## 作者 RAY 个人主页 http://anyirao.com
 
