@@ -636,6 +636,7 @@
        {\@latex@warning{Empty `thebibliography' environment}}%
       \endlist}
 \bibliographystyle{gbt7714-2005}
+%\bibliographystyle{unsrt}
 \setcitestyle{super,square}
 \renewcommand\NAT@citesuper[3]{%
 \ifNAT@swa%
@@ -834,21 +835,53 @@
   \end{tabular}
 }
 \newcommand*{\njut@covertable@twolinetitle}{
-  \begin{tabular}{p{7.3em}c}
-      \makebox[7em][s]{\njut@cap@cover@title}
-      & \njutunderline[310pt]{\njut@value@titlea}\\
-      \makebox[7em][s]{}
-      & \njutunderline[310pt]{\njut@value@titleb}\\
-      \makebox[7em][s]{\njut@cap@cover@author}
-      & \njutunderline[310pt]{\njut@value@author}\\
-      \makebox[7em][s]{\njut@cap@cover@major}
-      & \njutunderline[310pt]{\njut@value@major}\\
-      \makebox[7em][s]{\njut@cap@cover@supervisor}
-      & \njutunderline[310pt]{\njut@value@supervisor}\\
-      \makebox[7em][s]{\njut@cap@cover@researchfield}
-      & \njutunderline[310pt]{\njut@value@researchfield}\\
+  \begin{tabular}{p{4.2em}c}
+    \makebox[4.2em][s]{\njut@cap@cover@department}
+    & \njutunderline[250pt]{\njut@value@department}\\
+    \makebox[4.2em][s]{\njut@cap@cover@major}
+    & \njutunderline[250pt]{\njut@value@major}\\
+    \makebox[4.2em][s]{\njut@cap@cover@title}
+    & \njutunderline[250pt]{\njut@value@titlea}\\
+	\makebox[4.2em][s]{}
+    & \njutunderline[250pt]{\njut@value@titleb}
+  \end{tabular}
+  \begin{tabular}{p{4.2em}cp{4.2em}c}
+    \makebox[4.2em][s]{\njut@cap@cover@grade}
+    & \njutunderline[90pt]{\njut@value@grade}
+    & \makebox[4.2em][s]{\njut@cap@cover@studentid}
+    & \njutunderline[90pt]{\njut@value@studentid}\\
+  \end{tabular}
+  \begin{tabular}{p{4.2em}c}
+    \makebox[4.2em][s]{\njut@cap@cover@author}
+    & \njutunderline[250pt]{\njut@value@author}
+  \end{tabular}
+  \begin{tabular}{p{4.2em}cp{4.2em}c}
+    \makebox[4.2em][s]{\njut@cap@cover@supervisor}
+    & \njutunderline[90pt]{\njut@value@supervisor}
+    & \makebox[4.2em][s]{\njut@cap@cover@supervisortitle}
+    & \njutunderline[90pt]{\njut@value@supervisortitle}\\
+  \end{tabular}
+  \begin{tabular}{p{4.2em}c}
+    \makebox[4.2em][s]{\njut@cap@cover@submitdate}
+    & \njutunderline[250pt]{\njut@value@submitdate}\\
   \end{tabular}
 }
+%\newcommand*{\njut@covertable@twolinetitle}{
+%  \begin{tabular}{p{7.3em}c}
+%      \makebox[7em][s]{\njut@cap@cover@title}
+%      & \njutunderline[310pt]{\njut@value@titlea}\\
+%      \makebox[7em][s]{}
+%      & \njutunderline[310pt]{\njut@value@titleb}\\
+%      \makebox[7em][s]{\njut@cap@cover@author}
+%      & \njutunderline[310pt]{\njut@value@author}\\
+%      \makebox[7em][s]{\njut@cap@cover@major}
+%      & \njutunderline[310pt]{\njut@value@major}\\
+%      \makebox[7em][s]{\njut@cap@cover@supervisor}
+%      & \njutunderline[310pt]{\njut@value@supervisor}\\
+%      \makebox[7em][s]{\njut@cap@cover@researchfield}
+%      & \njutunderline[310pt]{\njut@value@researchfield}\\
+%  \end{tabular}
+%}
 \renewcommand*{\maketitle}{%
   \thispagestyle{empty}
   \pagenumbering{Roman}
@@ -863,7 +896,7 @@
     \vskip 28mm
     \vskip\stretch{0}
     {\bgroup
-    \bf\kaishu\zihao{3}
+    \bf\songti\zihao{3}
     \def\tabcolsep{1pt}
     \def\arraystretch{1.5}
     \ifnjut@title@twolinetitle
@@ -992,7 +1025,7 @@
     \bgroup
     THESIS: \njut@value@en@title \\
     DEPARTMENT: \njut@value@en@department \\
-    SPECIALIZATION: \njut@value@en@institute \\
+    SPECIALIZATION: \njut@value@en@major \\
     UNDERGRADUATE: \njut@value@en@author \\
     MENTOR: \njut@value@en@supervisor \\
     ABSTRACT:
